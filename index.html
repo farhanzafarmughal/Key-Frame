@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeyFrame</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: cornflowerblue;
+            margin-left: 350px;
+            margin-top: 150px; 
+            
+        }
+        
+        .Box{
+            display: flex;
+            background-color: aquamarine;
+            width: 100px;
+            height: 20vh;
+            justify-content: center;
+            position: relative;
+            border: 1px solid;
+            animation: home 10s infinite ;
+                
+                
+
+        }
+        @keyframes home{
+            0%{
+                top: 0;
+                left: 0;
+                background-color: blue;
+                            }
+            25%{
+                top: 200px;
+                left: 0;
+                background-color: violet;
+                border-radius: 50%;
+
+            }
+            50%{
+               top: 200px;
+               left: 200px;
+               background-color: brown;
+               border-radius: 1%;
+            }
+            75%{
+                top: 0px;
+                left: 200px;
+                background-color: yellow;
+                border-radius: 50%;
+                
+            }
+
+            100%{
+                top: 0;
+                left: 0px;
+                background-color: tomato;
+                
+            }
+        }
+
+
+
+
+    </style>
+</head>
+<body> 
+ <div class="Box"></div>  
+
+
+
+
+</body>
+</html>
